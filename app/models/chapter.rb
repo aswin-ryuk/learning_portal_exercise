@@ -5,6 +5,6 @@ class Chapter < ApplicationRecord
 	validates :name, uniqueness: { case_sensitive: false }
 
 	has_many :questions
-	belongs_to :topic_id
+	belongs_to :topic
 
 end
