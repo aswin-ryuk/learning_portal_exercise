@@ -4,13 +4,13 @@ class QuestionsController < ApplicationController
   # GET /questions
   def index
     @questions = Question.all
-
-    render json: @questions
+    render json: @questions.select(:id, :content, :options)
   end
 
   # GET /questions/1
   def show
-    render json: @question
+    render json: @question.select(:id, :content, :options)
+
   end
 
   # POST /questions
