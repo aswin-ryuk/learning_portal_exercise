@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  question_id: 
+  user_option: 
+  is_correct: 
+  is_skipped: MyString
+
+two:
+  user_id: 
+  question_id: 
+  user_option: 
+  is_correct: 
+  is_skipped: MyString

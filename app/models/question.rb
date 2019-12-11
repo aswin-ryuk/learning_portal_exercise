@@ -4,6 +4,7 @@ class Question < ApplicationRecord
 	
 	validates :category, :inclusion => { :in => ['easy', 'medium', 'hard']}
 
+	has_many :assessments
 	belongs_to :chapter
 
 end

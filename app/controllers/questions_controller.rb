@@ -9,7 +9,7 @@ class QuestionsController < ApplicationController
 
   # GET /questions/1
   def show
-    render json: @question.select(:id, :content, :options)
+    render json: @question, only: [:id, :content, :options] 
 
   end
 

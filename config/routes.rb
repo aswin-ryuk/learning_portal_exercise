@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+
+  resources :assessments, only: [:index] do 
+  		collection do
+			post :answer
+		end
+  end 
+
   post 'user_token' => 'user_token#create'
+
   resources :questions
   resources :users
   resources :chapters
