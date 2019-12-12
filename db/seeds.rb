@@ -29,14 +29,20 @@ Chapter.where(name: 'ruby', topic_id: Topic.where(name: 'programs').first.id).fi
 Chapter.where(name: 'java', topic_id: Topic.where(name: 'programs').first.id).first_or_create
 
 Question.where(content: 'who invented ruby language', chapter_id: Chapter.where(name: 'ruby').first.id,
-				category: 'easy',	options: "{a: 'Yukihiro Matsumoto', b: 'James Gosling', c: 'Dennis Ritchie', d: 'Anders Hejlsberg' }", correct_option: "a").first_or_create
+				category: 'easy',	options: "{a: 'Yukihiro Matsumoto', b: 'James Gosling', c: 'Dennis Ritchie', d: 'Anders Hejlsberg', e: 'skip' }", correct_option: "a").first_or_create
 
 Question.where(content: 'when was ruby language invented', chapter_id: Chapter.where(name: 'ruby').first.id,
-				category: 'medium',	options: "{a: 'mid-1970', b: 'mid-2000', c: 'mid-1980', d: 'mid-1990' }", correct_option: "d").first_or_create
+				category: 'medium',	options: "{a: 'mid-1970', b: 'mid-2000', c: 'mid-1980', d: 'mid-1990', e: 'skip'}", correct_option: "d").first_or_create
+
+Question.where(content: 'when was ruby language invented', chapter_id: Chapter.where(name: 'ruby').first.id,
+				category: 'medium',	options: "{a: 'mid-1970', b: 'mid-2000', c: 'mid-1980', d: 'mid-1990', e: 'skip'}", correct_option: "d").first_or_create
+
+Question.where(content: 'Ruby language was influenced by', chapter_id: Chapter.where(name: 'ruby').first.id,
+				category: 'medium',	options: "{a: 'C', b: 'Python', c: 'Perl', d: 'Java', e: 'skip'}", correct_option: "c").first_or_create
 
 Question.where(content: 'who invented java language', chapter_id: Chapter.where(name: 'java').first.id,
-				category: 'easy',	options: "{a: 'Yukihiro Matsumoto', b: 'James Gosling', c: 'Dennis Ritchie', d: 'Anders Hejlsberg' }", correct_option: "b").first_or_create
+				category: 'easy',	options: "{a: 'Yukihiro Matsumoto', b: 'James Gosling', c: 'Dennis Ritchie', d: 'Anders Hejlsberg', e: 'skip' }", correct_option: "b").first_or_create
 
-Question.where(content: 'when was first public implementation of Java 1.0 held', chapter_id: Chapter.where(	name: 'java').first.id,	category: 'medium',	options: "{a: '1993', b: '1994', c: '1995', d: '1990' }", correct_option: "c").first_or_create
+Question.where(content: 'when was first public implementation of Java 1.0 held', chapter_id: Chapter.where(	name: 'java').first.id,	category: 'medium',	options: "{a: '1993', b: '1994', c: '1995', d: '1990',e: 'skip' }", correct_option: "c").first_or_create
 
 User.where(name: 'admin', email: 'admin@gmial.com', password: 'admin123', password_confirmation: 'admin123').first_or_create
