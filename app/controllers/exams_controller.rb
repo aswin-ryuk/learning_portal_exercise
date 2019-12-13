@@ -1,6 +1,7 @@
 class ExamsController < ApplicationController
   before_action :set_exam, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
+  
   # GET /exams
   def index
     @exams = Exam.all

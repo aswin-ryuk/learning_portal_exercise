@@ -45,4 +45,5 @@ Question.where(content: 'who invented java language', chapter_id: Chapter.where(
 
 Question.where(content: 'when was first public implementation of Java 1.0 held', chapter_id: Chapter.where(	name: 'java').first.id,	category: 'medium',	options: "{a: '1993', b: '1994', c: '1995', d: '1990',e: 'skip' }", correct_option: "c").first_or_create
 
-User.where(name: 'admin', email: 'admin@gmial.com', password: 'admin123', password_confirmation: 'admin123').first_or_create
+User.create(name: 'admin', email: 'admin@gmail.com', password: 'admin123', password_confirmation: 'admin123')
+

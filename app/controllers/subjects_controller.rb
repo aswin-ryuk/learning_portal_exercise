@@ -1,6 +1,7 @@
 class SubjectsController < ApplicationController
   before_action :set_subject, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
+  
   # GET /subjects
   def index
     @subjects = Subject.all

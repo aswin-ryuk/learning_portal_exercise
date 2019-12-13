@@ -1,6 +1,7 @@
 class ChaptersController < ApplicationController
   before_action :set_chapter, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
+  
   # GET /chapters
   def index
     @chapters = Chapter.all

@@ -4,8 +4,6 @@ class Assessment < ApplicationRecord
 
 	validates :user_option, :inclusion => { :in => ['a', 'b', 'c', 'd', 'e']}
 
-	validate :answer_input
-
 	validates :question_id, uniqueness: { scope: :user_id ,  message: "You have already answered for this question." }
 	
 	belongs_to :user
