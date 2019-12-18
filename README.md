@@ -1,24 +1,6 @@
-# README
+## Requirement
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Requirement](https://github.com/aswin-ryuk/learning_portal_exercise/blob/master/public/requirement.PNG)
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Solution](https://github.com/aswin-ryuk/learning_portal_exercise/blob/master/public/learning%20portal%20api%20system%20test%20evidence%20doc.docx)
